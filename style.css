@@ -11,6 +11,7 @@ input,
 button {
   font-family: "Sora", sans-serif;
 }
+
 body {
   background-color: #333;
   color: #f9f9f9;
@@ -38,26 +39,31 @@ header {
 
 form {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 1rem;
 
-  input {
-    flex: 1;
-    padding: 1rem;
-    border-radius: 8px;
-    border: none;
-    outline: none;
-  }
+  .text-value {
+    display: flex;
+    gap: 1rem;
 
-  button {
-    padding: 1rem 2rem;
-    border-radius: 8px;
-    border: none;
-    background-color: #555;
-    color: #f9f9f9;
-    cursor: pointer;
+    input {
+      flex: 1;
+      padding: 1rem;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+    }
 
-    transition: background-color 0.3s;
+    button {
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      border: none;
+      background-color: #555;
+      color: #f9f9f9;
+      cursor: pointer;
+
+      transition: background-color 0.3s;
+    }
   }
 
   button:hover {
@@ -82,5 +88,6 @@ ul {
   img {
     width: 1.25rem;
     height: 1.25rem;
+    cursor: pointer;
   }
 }

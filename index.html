@@ -12,24 +12,41 @@
       href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
-    <title>to do</title>
+
+    <title>To-Do List</title>
   </head>
   <body>
     <div class="container">
-      <header><h1>TO DO</h1></header>
+      <header>
+        <h1>TO DO</h1>
+      </header>
 
-      <form>
-        <input type="text" placeholder="Enter a task" />
-        <button type="submit">Add Task</button>
+      <form id="taskForm">
+        <label for="taskInput" class="visually-hidden">Enter a task </label>
+        <div class="text-value">
+          <input
+            type="text"
+            id="taskInput"
+            placeholder="I need to..."
+            autocomplete="off"
+            required
+          />
+          <button type="submit">Add Task</button>
+        </div>
       </form>
 
-      <ul>
-        <li>
+      <ul id="taskList">
+        <!-- <li id="task">
           <p>Task 1</p>
-          <img src="assets/trash-solid.svg" alt="trash-solid" />
-        </li>
+          <img
+            src="assets/trash-solid.svg"
+            alt="trash-solid"
+            id="deleteButton"
+          />
+        </li> -->
       </ul>
     </div>
+
     <script src="script.js" defer></script>
   </body>
 </html>
