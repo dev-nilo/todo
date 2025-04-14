@@ -1,4 +1,4 @@
-# TaskList App
+# Todo App with VanillaJS
 
 A simple and intuitive task management app that leverages the browser's local storage to save your tasks automatically. Your tasks persist even after closing or refreshing the page!
 
